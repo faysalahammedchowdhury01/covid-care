@@ -73,7 +73,7 @@ a {
   display: inline-block;
 }
 
-.btn--success {
+.btn-success {
   background-color: var(--primary-color);
   color: #ffffff;
   padding: 10px 20px;
@@ -81,8 +81,16 @@ a {
   transition: all 0.3s ease;
 }
 
-.btn--success:hover {
+.btn-success:hover {
   background-color: #1d8039;
+}
+
+.text-danger {
+  color: var(--danger-color);
+}
+
+.text-success {
+  color: var(--primary-color);
 }
 
 /* Header Area */
@@ -152,7 +160,7 @@ a {
   margin-right: 5px;
 }
 
-.page-intro__title {
+.page-intro-title {
   font-size: 4rem;
   font-weight: 700;
   color: var(--heading-color);
@@ -160,12 +168,43 @@ a {
   margin-top: 5px;
 }
 
-.page-intro__desc {
+.page-intro-desc {
   font-size: 1.6rem;
   color: var(--text-color);
   margin-top: 15px;
 }
 
-.page-intro__btn {
+.page-intro-btn {
+  margin-top: 30px;
+}
+
+/* Statistics Area */
+.statistics-box {
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  padding: 40px 40px 10px 40px;
+  border-radius: 24px;
+}
+
+.statistics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.statistics-title {
+  font-size: 1.6rem;
+  color: var(--heading-color);
+}
+
+.statistics-num {
+  font-size: 2.5rem;
+}
+
+.statistics-text {
+  font-size: 1.3rem;
+}
+
+.last-update {
+  font-size: 1.6rem;
   margin-top: 30px;
 }

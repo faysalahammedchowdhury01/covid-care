@@ -86,3 +86,18 @@
     background-size: 50px;
   }
 }
+
+/* Statistics Area Responsive */
+@media only screen and (max-width: 767px) {
+  .statistics {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .statistics {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}

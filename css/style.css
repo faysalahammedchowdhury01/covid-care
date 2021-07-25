@@ -1,6 +1,14 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
 
+/* Variables */
+:root {
+  --primary-color: #44b564;
+  --danger-color: #ff0000;
+  --text-color: #777777;
+  --heading-color: #333333;
+}
+
 /* Reboot */
 *,
 *::before,
@@ -10,11 +18,15 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: 'Hind Siliguri', sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  color: #555555;
+  color: var(--text-color);
 }
 
 img {
@@ -26,18 +38,54 @@ a {
 }
 
 /* Utilities */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
 
 /* Header Area */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 0;
 }
 
 .logo {
-  color: #333333;
+  color: var(--heading-color);
   display: flex;
   align-items: center;
+  font-size: 1.6rem;
 }
 
 .logo img {
@@ -55,9 +103,10 @@ a {
 }
 
 .navbar-items .navbar-item .navbar-link {
-  color: #333333;
+  color: var(--text-color);
+  font-size: 1.6rem;
 }
 
 .navbar-items .navbar-item.active .navbar-link {
-  color: #44b564;
+  color: var(--primary-color);
 }

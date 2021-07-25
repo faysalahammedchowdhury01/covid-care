@@ -1,4 +1,63 @@
-/* Import Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+/* Reboot */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #555555;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
 
 /* Utilities */
+
+/* Header Area */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #333333;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 5px;
+}
+
+.navbar-items .navbar-item {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar-items .navbar-item {
+  margin: 0 15px;
+}
+
+.navbar-items .navbar-item .navbar-link {
+  color: #333333;
+}
+
+.navbar-items .navbar-item.active .navbar-link {
+  color: #44b564;
+}

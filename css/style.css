@@ -60,6 +60,14 @@ a {
   width: 50%;
 }
 
+.responsible-half-width:first-child {
+  padding-right: 20px;
+}
+
+.responsible-half-width:last-child {
+  padding-left: 20px;
+}
+
 .btn {
   font-size: 1.5rem;
   display: inline-block;

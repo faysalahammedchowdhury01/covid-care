@@ -7,6 +7,7 @@
   --danger-color: #ff0000;
   --text-color: #777777;
   --heading-color: #333333;
+  --box-shadow: 0px 0px 44px -5px rgba(102, 102, 102, 0.1);
 }
 
 /* Reboot */
@@ -37,40 +38,16 @@ a {
   text-decoration: none;
 }
 
+button,
+a {
+  cursor: pointer;
+}
+
 /* Utilities */
 .container {
   max-width: 100%;
   margin: 0 auto;
-}
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1320px;
-  }
+  padding: 0 20px;
 }
 
 /* Header Area */
@@ -85,12 +62,23 @@ a {
   color: var(--heading-color);
   display: flex;
   align-items: center;
-  font-size: 1.6rem;
+  font-size: 20px;
 }
 
 .logo img {
   width: 40px;
-  margin-right: 5px;
+  margin-right: 7px;
+}
+
+.mobile-menu {
+  display: none;
+  width: 30px;
+  border: 0;
+  background-color: var(--primary-color);
+  padding: 5px 0;
+  color: #ffffff;
+  border-radius: 3px;
+  font-size: 16px;
 }
 
 .navbar-items .navbar-item {

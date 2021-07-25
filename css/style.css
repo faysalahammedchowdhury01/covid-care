@@ -50,6 +50,33 @@ a {
   padding: 0 20px;
 }
 
+.flexible-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.responsible-half-width {
+  width: 50%;
+}
+
+.btn {
+  font-size: 1.5rem;
+  display: inline-block;
+}
+
+.btn--success {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn--success:hover {
+  background-color: #1d8039;
+}
+
 /* Header Area */
 .navbar {
   display: flex;
@@ -97,4 +124,40 @@ a {
 
 .navbar-items .navbar-item.active .navbar-link {
   color: var(--primary-color);
+}
+
+/* Banner Area */
+#banner-area {
+  background-image: url('../images/covid-right-half.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 100px;
+  padding: 50px 0;
+}
+
+.danger-alert {
+  color: var(--danger-color);
+  font-size: 1.8rem;
+}
+
+.danger-alert i {
+  margin-right: 5px;
+}
+
+.page-intro__title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  line-height: 1.2;
+  margin-top: 5px;
+}
+
+.page-intro__desc {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  margin-top: 15px;
+}
+
+.page-intro__btn {
+  margin-top: 30px;
 }

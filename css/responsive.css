@@ -93,6 +93,15 @@
   }
 }
 
+@media only screen and (max-width: 575px) {
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    top: 28px;
+    right: 20px;
+  }
+}
+
 /* Banner Area Responsive */
 @media only screen and (max-width: 991px) {
   #banner-area {

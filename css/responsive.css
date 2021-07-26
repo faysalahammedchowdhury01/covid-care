@@ -188,7 +188,8 @@
 
 @media only screen and (max-width: 575px) {
   .contact-box {
-    padding: 20px;
+    padding: 30px 20px;
+    padding-bottom: 50px;
   }
 
   #footer-area {

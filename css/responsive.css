@@ -45,7 +45,15 @@
 
   .responsible-half-width.image-side {
     order: 0;
+    width: 50%;
+    margin: 0 auto;
     margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .responsible-half-width.image-side {
+    width: 100%;
   }
 }
 
@@ -53,21 +61,21 @@
 @media only screen and (max-width: 991px) {
   .navbar-items {
     opacity: 0;
-    visibility: hidden;
     position: fixed;
     top: 0;
-    left: -50px;
+    left: 0;
     height: 100%;
     padding: 20px;
     background-color: #ffffff;
     box-shadow: var(--box-shadow);
-    transition: all 0.3s ease-out;
+    transition: all 0.1s linear;
+    width: 0;
+    white-space: nowrap;
   }
 
   .navbar-items.open {
+    width: 250px;
     opacity: 1;
-    visibility: visible;
-    left: 0;
   }
 
   .navbar-items .navbar-item {

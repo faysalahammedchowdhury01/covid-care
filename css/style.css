@@ -53,6 +53,9 @@ a {
 .flexible-container {
   display: flex;
   justify-content: space-between;
+}
+
+.v-center {
   align-items: center;
 }
 
@@ -71,6 +74,8 @@ a {
 .btn {
   font-size: 1.5rem;
   display: inline-block;
+  color: var(--heading-color);
+  font-weight: 500;
 }
 
 .btn-success {
@@ -85,6 +90,35 @@ a {
   background-color: #1d8039;
 }
 
+.btn-icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.btn-icon .btn-text {
+  background-color: #ffffff;
+  margin-left: 15px;
+}
+
+.btn-icon i {
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.btn-icon::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  z-index: -1;
+}
+
 .text-danger {
   color: var(--danger-color);
 }
@@ -93,6 +127,40 @@ a {
   color: var(--primary-color);
 }
 
+.section-intro-center {
+  text-align: center;
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.section-intro .section-heading {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  position: relative;
+  display: inline-block;
+}
+
+.section-intro .section-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 70%;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.section-intro.section-intro-center .section-heading::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-intro .section-desc {
+  font-size: 1.6rem;
+  margin-top: 25px;
+}
 /* Header Area */
 .navbar {
   display: flex;
@@ -101,16 +169,8 @@ a {
   padding: 10px 0;
 }
 
-.logo {
-  color: var(--heading-color);
-  display: flex;
-  align-items: center;
-  font-size: 20px;
-}
-
 .logo img {
-  width: 40px;
-  margin-right: 7px;
+  width: 130px;
 }
 
 .mobile-menu {
@@ -179,6 +239,10 @@ a {
 }
 
 /* Statistics Area */
+#statistics-area {
+  padding-bottom: 50px;
+}
+
 .statistics-box {
   text-align: center;
   box-shadow: var(--box-shadow);
@@ -207,4 +271,74 @@ a {
 .last-update {
   font-size: 1.6rem;
   margin-top: 30px;
+}
+
+/* What We Do Area */
+#what-we-do-area {
+  padding: 50px 0;
+  background-image: url('../images/covid-left-half.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 100px;
+}
+
+.what-we-do-list {
+  margin-top: 30px;
+}
+
+.what-we-do-list li {
+  font-size: 1.6rem;
+  list-style-type: none;
+}
+
+.what-we-do-list li::before {
+  content: '';
+  display: inline-block;
+  height: 19px;
+  width: 21.39px;
+  background-size: 21px;
+  background-image: url(../images/covid-icon.svg);
+  background-repeat: no-repeat;
+  margin-right: 15px;
+  transform: translateY(4px);
+}
+
+.what-we-do-area-btn {
+  margin-top: 30px;
+}
+
+/* Prevention Area */
+#prevention-area {
+  padding: 50px 0;
+}
+
+.preventions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 100px;
+}
+
+.single-prevention {
+  padding: 40px;
+  padding-top: 0;
+  border-radius: 25px;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+}
+
+.prevention-image {
+  margin-top: -50px;
+}
+
+.prevention-title {
+  font-size: 2rem;
+  color: var(--heading-color);
+  margin-top: 15px;
+}
+
+.prevention-desc {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  margin-top: 5px;
 }

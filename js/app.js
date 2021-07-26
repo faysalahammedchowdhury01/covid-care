@@ -1,3 +1,4 @@
+// Mobile Menu
 const mobileMenu = document.querySelector('.mobile-menu');
 const navbarItems = document.querySelector('.navbar-items');
 
@@ -15,6 +16,15 @@ function toggleNavbar() {
     }
 }
 
-
-
 mobileMenu.addEventListener('click', toggleNavbar);
+
+// Back to Top
+const backToTopBtn = document.getElementById("back-to-top");
+
+// When the user clicks on the button, scroll to the top of the document
+function backToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+backToTopBtn.addEventListener('click', backToTop);

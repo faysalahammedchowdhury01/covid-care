@@ -113,6 +113,7 @@ textarea:focus {
 .btn-icon .btn-text {
   background-color: #ffffff;
   margin-left: 15px;
+  z-index: 2;
 }
 
 .btn-icon i {
@@ -130,7 +131,7 @@ textarea:focus {
   height: 40px;
   border: 2px solid var(--primary-color);
   border-radius: 50%;
-  z-index: -1;
+  z-index: 1;
 }
 
 .text-danger {
@@ -218,7 +219,7 @@ textarea:focus {
 
 /* Banner Area */
 #banner-area {
-  background-image: url('../images/covid-right-half.png');
+  background-image: url('../images/icons/covid-right-half.png');
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 100px;
@@ -290,7 +291,7 @@ textarea:focus {
 /* What We Do Area */
 #what-we-do-area {
   padding: 50px 0;
-  background-image: url('../images/covid-left-half.png');
+  background-image: url('../images/icons/covid-left-half.png');
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 100px;

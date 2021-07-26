@@ -381,6 +381,10 @@ textarea:focus {
 }
 
 /* Contact Area */
+#contact-area {
+  padding: 50px 0;
+}
+
 .contact-box {
   box-shadow: 0px 29px 0px -14px #5bc378, 0px 52px 0px -24px #4db76b,
     0px 0px 50px -1px rgba(82, 82, 82, 0.1);
@@ -459,4 +463,22 @@ textarea:focus {
 
 .contact-form-btn {
   margin-top: 30px;
+}
+
+/* Footer Area */
+#footer-area {
+  padding: 80px 0 10px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+#back-to-top {
+  background-color: transparent;
+  color: #ffffff;
 }

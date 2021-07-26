@@ -114,6 +114,7 @@ textarea:focus {
   background-color: #ffffff;
   margin-left: 15px;
   z-index: 2;
+  padding: 1px 0;
 }
 
 .btn-icon i {
@@ -182,6 +183,10 @@ textarea:focus {
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
+}
+
+.logo {
+  line-height: 0;
 }
 
 .logo img {
@@ -374,6 +379,10 @@ textarea:focus {
 /* Symptoms Area */
 #symptoms-area {
   padding: 50px 0;
+  background-image: url('../images/icons/covid-full.png');
+  background-repeat: no-repeat;
+  background-position: left 100px;
+  background-size: 200px;
 }
 
 .symptoms-image {

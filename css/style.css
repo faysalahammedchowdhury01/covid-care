@@ -329,6 +329,19 @@ a {
 
 .prevention-image {
   margin-top: -50px;
+  max-width: 100%;
+}
+
+.prevention-image.small-image {
+  width: 198px;
+}
+
+.prevention-image.medium-image {
+  width: 210px;
+}
+
+.prevention-image.big-image {
+  width: 230px;
 }
 
 .prevention-title {

@@ -101,3 +101,29 @@
     gap: 20px;
   }
 }
+
+/* Prevention Area Responsive */
+@media only screen and (max-width: 991px) {
+  .preventions {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+  }
+
+  .single-prevention {
+    padding: 40px;
+  }
+
+  .prevention-image {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .preventions {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .single-prevention {
+    padding: 30px;
+  }
+}

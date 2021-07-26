@@ -164,6 +164,7 @@ textarea:focus {
   bottom: -5px;
   left: 0;
   width: 70%;
+  max-width: 150px;
   height: 3px;
   background-color: var(--primary-color);
 }

@@ -312,7 +312,7 @@ textarea:focus {
   height: 19px;
   width: 21.39px;
   background-size: 21px;
-  background-image: url(../images/covid-icon.svg);
+  background-image: url(../images/icons/covid-icon.svg);
   background-repeat: no-repeat;
   margin-right: 15px;
   transform: translateY(4px);
